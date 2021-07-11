@@ -1,17 +1,28 @@
----
 name: "MusicBrainz"
 guid: "8c95c4d2-e50c-4fb0-a4f3-6c06ff0f9a1a"
 imageUrl: "https://repo.jellyfin.org/releases/plugin/images/jellyfin-plugin-musicbrainz.png"
-version: "1.0.0.0"
+version: "untagged-4667e24721126f351b2d"
 targetAbi: "10.7.0.0"
 framework: "net5.0"
 owner: "jellyfin"
 overview: "Get music metadata from MusicBrainz"
 description: >
   Get music metadata from MusicBrainz
+
 category: "Metadata"
 artifacts:
   - "Jellyfin.Plugin.MusicBrainz.dll"
-changelog: |
-  - Initial Release
-  - Split of from Jellyfin core.
+changelog: |2-
+  ### New features and improvements ###
+  - chore: plugin images (#8) @h1dden-da3m0n
+
+  ### Bug Fixes ###
+  - Fix build.yaml artifacts (#1) @oddstr13
+
+  ### Dependency updates ###
+  - chore(deps): bump release-drafter/release-drafter from v5.14.0 to v5.15.0 (#5) @dependabot
+
+  ### CI & build changes ###
+  - Update ci (#9) @h1dden-da3m0n
+  - ci(analyzers): update analyzers (#6) @h1dden-da3m0n
+  - chore(ci): builds, releas drafter and more (#3) @h1dden-da3m0n
